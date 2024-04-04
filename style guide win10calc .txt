@@ -1,0 +1,10 @@
+number button: #ffffff
+operations button: #f8f8f8
+background :#f1f1f1
+equal button =:#394e9c
+bold display text:#000000
+
+
+465px break point
+200px memory pan-history
+270px max

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Electron calc</title>
+</head>
+<body>
+	<div class="calc-box">
+		<div class="calc-upper">
+			<div class="widgets">
+				<span class="icon"id="navMenu">&#xE700;</span>
+				<span id="mode">Standard</span>
+				<span class="icon" id="MiniContract2Mirrored">&#xee49;</span>
+				<!--<span class="icon" id="MiniExpand2Mirrored">&#xee47;</span>-->
+				<span class="icon" id="historyBtn">&#xE81c;</span>
+			</div>
+			<div id="expression">90+25+85=</div>
+			<div id="screen">0</div>
+		</div>
+
+		<div class="calc-lower">
+			<div class="m-section">
+				<span class="mem">MC</span>
+				<span class="mem">MR</span>
+				<span class="mem">M+</span>
+				<span class="mem">M-</span>
+				<span class="mem">MS</span>
+				<span class="icon mem">M&#xe70d;</span>
+			</div>
+			<div class="buttons-section">
+				<button class="operand icon" id="percent">%</button>
+				<button class="operand">CE</button>
+				<button class="operand" id="clear">C</button>
+				<button class="operand icon" id="backspace">&#xE94F;</button>
+				<button class="operand icon" id="fraction"><sup>1</sup>/<sub>x</sub></button>
+				<button class="operand icon" id="square">X <sup>2</sup></button>
+				<button class="operand icon" id="sqrt">√</button>
+				<button class="operand" id="divide">÷</button>
+				<button class="numbers" id="seven">7</button>
+				<button class="numbers" id="eight">8</button>
+				<button class="numbers" id="nine">9</button>
+				<button class="operand icon" id="multiply">x</button>
+				<button class="numbers" id="four">4</button>
+				<button class="numbers" id="five">5</button>
+				<button class="numbers" id="six">6</button>
+				<button class="operand icon"id="subtract">−</button>
+				<button class="numbers" id="one">1</button>
+				<button class="numbers" id="two">2</button>
+				<button class="numbers" id="three">3</button>
+				<button class="operand icon" id="add">+</button>
+				<button class="numbers" id="negate"><sup>+</sup>/<sub>-</sub></button>
+				<button class="numbers" id="zero">0</button>
+				<button class="numbers" id="point">.</button>
+				<button class="operand icon" id="equalTo">&#xE94E;</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="history-box">
+	<div class="widgets">
+		<span>History</span>
+		<span>Memory</span>
+	</div>
+</div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
