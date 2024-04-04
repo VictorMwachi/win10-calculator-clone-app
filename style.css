@@ -1,0 +1,149 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Segoe UI";
+}
+@font-face {
+    font-family: 'Segoe Fluent Icons';
+    src: url('Segoe-Fluent-Icons/Segoe-Fluent-Icons.ttf') format('truetype');
+}
+body{
+	height: 100vh;
+	background: #f1f1f1;
+	display: flex;
+	flex-direction: row;
+}
+
+.calc-box {
+	display: flex;
+	flex-direction: column;
+	min-height: 400px;
+	min-width: 270px;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	padding: 3px;
+	background: #f1f1f1;
+}
+.history-box{
+	display: none;
+}
+.calc-upper{
+	width: 100%;
+	height: 25%;
+	min-height: 100px;
+	flex-grow: 3;
+	display: flex;
+	flex-direction: column;
+}
+.calc-lower{
+	display: flex;
+	flex-direction: column;
+	height: 65%;
+	width: 100%;
+	flex-grow: 7;
+	justify-content: flex-start;
+
+}
+.m-section{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.buttons-section{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 3px;
+	width: 100%;
+	height: 70%;
+	flex-grow: 1;
+}
+
+.operand {
+	background: #f8f8f8;
+	border-radius: 5px;
+	border: #f8f8f8;
+}
+.numbers{
+	background: #ffffff;
+	border-radius: 5px;
+	border: #f8f8f8;
+}
+button {
+	min-height: 40px;
+	min-width: 45px;
+}
+.icon,.numbers, #screen, .widgets,button {
+    font-family: 'Segoe Fluent Icons', sans-serif;
+}
+#equalTo{
+	background: #394e9c;
+	color: white;
+}
+.mem{
+	align-self: flex-end;
+
+}
+.widgets{
+	height: 30px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	font-size: 20px;
+	font-family: sans-serif;
+	font-weight: 600;
+	align-items: center;
+}
+
+#expression{
+	align-self: flex-end;
+}
+#screen{
+	font-size: 35px;
+	align-self: flex-end;
+	font-weight: bold;
+}
+#historyBtn{
+	margin-left: auto;
+}
+
+#mode{
+	margin-left: 10px;
+	margin-right: 30px;
+}
+#navMenu{
+	margin-left: 10px;
+}
+@media only screen and (min-width: 465px){
+	.calc-box{
+		min-width: 270px;
+		flex-grow: 9;
+	}
+	.history-box {
+		display: flex;
+		min-width: 195px;
+		min-height: 400px;
+		max-width: 270px;
+		height: 100%;
+		width: 100%;
+		flex-grow: 1;
+
+
+	}
+	.history-box .widgets {
+		display: flex;
+		justify-content: flex-start;
+	}
+	.history-box .widgets span{
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	#historyBtn{
+		display: none;
+	}
+}
+
+
+}
