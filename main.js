@@ -24,9 +24,14 @@ const square = document.getElementById('square');
 const clearScreen = document.getElementById('clear');
 const negate =document.getElementById('negate');
 let expression = document.getElementById('expression');
+const menu = document.getElementById("navMenu");
+const menuItems = document.getElementsByName("menu-items");
 
 /**handle clicking of calculator buttons 
 [0,1,2,3,4,5,6,7,8,9,-,+,.,multiplication,backspace,%,division]**/
+function handleMenu(){
+	menuItems.style.display = "none";
+}
 
 function handleClick(e){
 	//add content of clicked button to display
@@ -89,8 +94,10 @@ function handleKeyPress(e){
 }
 
 function evalExpression(str){
-	return (eval(str)).toFixed(9);
+	return (eval(str));
 }
+//toggle menu bar
+menu.addEventListener('click',handleMenu);
 //add click event listener to the buttons
 zero.addEventListener('click', handleClick);
 one.addEventListener('click', handleClick);
